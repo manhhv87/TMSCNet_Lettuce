@@ -1,7 +1,6 @@
-################加载库
+# Loading the library
 import tensorflow as tf
 from tensorflow.keras.layers import *
-
 
 
 def Model_2(x):
@@ -15,7 +14,4 @@ def Model_2(x):
     out_dia = Dense(64, activation='relu')(out_dia)
     out_dia = Dense(1, name='out_dia')(out_dia)
 
-    return [out_h,out_dia]
-
-
-
+    return [out_h, out_dia]

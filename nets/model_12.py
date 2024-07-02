@@ -1,7 +1,5 @@
-################加载库
 import tensorflow as tf
 from tensorflow.keras.layers import *
-
 
 
 def Model_12(x):
@@ -24,6 +22,3 @@ def Model_12(x):
     outputs = Dense(4, activation='softmax')(x)
 
     return outputs
-
-
-

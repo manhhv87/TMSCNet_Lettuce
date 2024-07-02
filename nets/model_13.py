@@ -1,12 +1,8 @@
-################加载库
 import tensorflow as tf
 from tensorflow.keras.layers import *
 
 
-
-
-
-def Model_13(x,n_filters,layers,kernel_size,pool_size,dropout,units,n):
+def Model_13(x, n_filters, layers, kernel_size, pool_size, dropout, units, n):
     filters = n_filters
     for i in range(layers):
         x = Conv2D(filters=filters,
@@ -28,6 +24,3 @@ def Model_13(x,n_filters,layers,kernel_size,pool_size,dropout,units,n):
     out_h = Dense(1, activation='linear', name='out_h')(x)
 
     return out_h
-
-
-

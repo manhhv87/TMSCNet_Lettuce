@@ -1,7 +1,5 @@
-################加载库
 import tensorflow as tf
 from tensorflow.keras.layers import *
-
 
 
 def Model_3(x):
@@ -15,7 +13,4 @@ def Model_3(x):
     out_area = Dense(64, activation='relu')(out_area)
     out_area = Dense(1, name='out_area')(out_area)
 
-    return [out_fw,out_area]
-
-
-
+    return [out_fw, out_area]
